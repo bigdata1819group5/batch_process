@@ -13,6 +13,8 @@ object Main {
     val paired = serialized.map(v => (v.id, v))
     val count = paired.countByKey()
     count.foreach(println(_))
+    println(paired.count())
+    println("I LOG SO I EXIST")
     context.stop()
   }
 }
