@@ -12,6 +12,6 @@ object Main {
     val serialized = data.mapValues(v => Vehicle.create(v.toString))
     val count = serialized.countByKey()
     count.foreach(println(_))
-
+    context.stop()
   }
 }
