@@ -34,5 +34,5 @@ case class VehicleCoveredDistance(
   id: String,
   company_id: String,
   distance: Double,
-  date: Date
+  time: Date
 )
